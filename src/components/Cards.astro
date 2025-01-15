@@ -1,0 +1,16 @@
+---
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  githubLink?: string;
+  moreInfoLink?: string;
+}
+
+interface Props {
+  projects: Project[];
+}
+
+const { projects } = Astro.props;
+---
