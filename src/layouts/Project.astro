@@ -1,12 +1,24 @@
 ---
+import Cards from "../components/Cards.astro";
 import Title2 from "../components/Title2.astro";
+
+const projects = [
+  {
+    id: 1,
+    title: "Proyecto 1",
+    description: "Este es el primer proyecto",
+    image: "https://picsum.photos/200/200",
+    githubLink: "https://github.com/usuario/proyecto1",
+    moreInfoLink: "#",
+  },
+];
 ---
 
 <section id="projects" class="py-20 bg-gray-100">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <Title2 title="Mis Proyectos" />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
+      <Cards projects={projects} />
     </div>
   </div>
 </section>
