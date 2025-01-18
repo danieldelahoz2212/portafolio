@@ -9,11 +9,11 @@ const { size = "md", text = "", icon = "" } = Astro.props;
 ---
 
 <button
-  class={`flex items-center space-x-2 font-semibold text-lg px-6 py-3 rounded-lg bg-white text-black hover:bg-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-300 transition duration-200 ease-in-out ${
-    size === "lg" ? "text-lg" : "text-sm"
+  class={`flex items-center justify-center font-semibold rounded-lg bg-white text-black hover:bg-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-300 transition duration-200 ease-in-out ${
+    size === "lg" ? "text-lg px-6 py-3" : "text-sm px-4 py-2"
   }`}
 >
-  {icon && <i data-lucide={icon} />}
+  {icon && <i data-lucide={icon} class="w-5 h-5 mr-2" />}
   <span>{text}</span>
 </button>
 
