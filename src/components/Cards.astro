@@ -34,14 +34,19 @@ const { projects } = Astro.props;
         <div class="flex justify-between items-center">
           <a
             href={project.moreInfoLink}
+            target="_blank"
+            rel="noopener noreferrer"
             class="bg-black text-white font-semibold rounded-lg text-lg px-4 py-2 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 transition duration-200 ease-in-out"
           >
             Ver más
           </a>
-          <a class="bg-black text-white font-semibold rounded-lg text-lg px-4 py-2 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 transition duration-200 ease-in-out">
-            {project.icon && (
-              <i data-lucide={project.icon} class=" h-6" />
-            )}
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-black text-white font-semibold rounded-lg text-lg px-4 py-2 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 transition duration-200 ease-in-out"
+          >
+            {project.icon && <i data-lucide={project.icon} class=" h-6" />}
           </a>
         </div>
       </div>
