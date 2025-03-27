@@ -4,7 +4,9 @@ type Prop = {
 };
 const { text } = Astro.props;
 ---
+<div class="columns m-6 p-4">
+  <p class="text-lg text-gray-700 mx-auto text-center">
+    {text}
+  </p>
+</div>
 
-<p class="text-lg text-gray-700 max-w-3x1 mx-auto text-center">
-  {text}
-</p>
