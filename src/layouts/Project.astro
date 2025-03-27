@@ -6,11 +6,11 @@ const projects = [
   {
     id: 1,
     icon:"github",
-    title: "Proyecto 1",
-    description: "Este es el primer proyecto",
-    image: "https://picsum.photos/200/200",
-    githubLink: "https://github.com/usuario/proyecto1",
-    moreInfoLink: "#",
+    title: "Api Dragon Ball",
+    description: "proyecto desarrollado utilizando la API de Dragon Ball para mostrar información de personajes.",
+    image: "/dragon-ball-api.png",
+    githubLink: "https://github.com/danieldelahoz2212/dragon_ball_api",
+    moreInfoLink: "https://splendorous-sorbet-4ca8be.netlify.app/",
   },
 ];
 ---
@@ -18,7 +18,7 @@ const projects = [
 <section id="projects" class="py-20 bg-gray-100 animate-fade-left">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <Title2 title="Mis Proyectos" />
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:ml-24">
       <Cards projects={projects} />
     </div>
   </div>
