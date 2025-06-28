@@ -1,34 +1,73 @@
 ---
-
 ---
-
 <nav
   class="bg-white bg-opacity-65 fixed top-0 w-full z-20 start-0 border-b border-black-600 backdrop-blur-md animate-fade-up"
 >
-  <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-  >
-    <a
-      href="https://dapper-frangipane-6d50f8.netlify.app/"
-      class="flex items-center space-x-3 rtl:space-x-reverse"
-    >
-      <span
-        class="self-center text-2xl font-semibold whitespace-nowrap text-black"
-      >
-        Daniel De La Hoz Pautt
-      </span>
+  <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-1.5 relative">
+
+    <a href="/" class="flex items-center text-black font-semibold text-base md:text-lg">
+      Daniel De La Hoz Pautt
     </a>
-    <div class="flex md:order-2 space-x-3 rtl:space-x-reverse">
+
+    <div class="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none md:top-auto md:left-auto md:translate-x-0 md:translate-y-0">
+      <div
+        class="navbar bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-blue-200 p-2 md:p-3"
+      >
+        <ul class="flex gap-2 md:gap-6 font-semibold text-sm md:text-base items-center">
+          <li>
+            <a
+              href="#about"
+              class="block py-1 px-3 text-black rounded-lg hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200"
+            >
+              Sobre mí
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="block py-1 px-3 text-black rounded-lg hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200"
+            >
+              Proyectos
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="block py-1 px-3 text-black rounded-lg hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200"
+            >
+              Habilidades
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex md:order-2 items-center">
       <a
         href="https://drive.google.com/file/d/1b-Gg8aQR88CxLYXII9cD-UHQMALGYm99/view?usp=sharing"
         target="_blank"
-        class="hidden lg:block bg-black text-white focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm px-4 py-2 text-center"
+        class="hidden lg:flex bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-xl text-sm md:text-base px-4 py-1.5 shadow-lg hover:from-purple-500 hover:to-blue-500 hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 items-center"
+        style="min-width: 120px;"
       >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 inline-block mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 4v16m8-8H4"
+          />
+        </svg>
         Descargar CV
       </a>
       <button
         id="menu-button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ml-2"
         aria-controls="menu-open"
         aria-expanded="false"
       >
@@ -45,51 +84,72 @@
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"></path>
+            d="M1 1h15M1 7h15M1 13h15"
+          />
         </svg>
       </button>
     </div>
-    <div
-      id="menu-open"
-      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 navbar"
-      id="navbar-sticky"
-    >
-      <ul
-        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-      >
-        <li>
-          <a
-            href="#about"
-            class="btn block py-2 px-3 text-black rounded md:bg-transparent md:p-0 hover:text-blue-300"
+  </div>
+
+  <div
+    id="menu-open"
+    class="items-center justify-between hidden w-full md:hidden navbar bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-blue-200 mt-2 p-3 transition-all duration-300"
+  >
+    <ul class="flex flex-col gap-2 font-semibold text-base">
+      <li>
+        <a
+          href="#about"
+          class="block py-2 px-4 text-black rounded-lg hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200"
+        >
+          Sobre mí
+        </a>
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="block py-2 px-4 text-black rounded-lg hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200"
+        >
+          Proyectos
+        </a>
+      </li>
+      <li>
+        <a
+          href="#skills"
+          class="block py-2 px-4 text-black rounded-lg hover:bg-blue-100 hover:text-blue-700 transition-colors duration-200"
+        >
+          Habilidades
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://drive.google.com/file/d/1b-Gg8aQR88CxLYXII9cD-UHQMALGYm99/view?usp=sharing"
+          target="_blank"
+          class="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full text-base px-5 py-2 shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 mt-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            Sobre mí
-          </a>
-        </li>
-        <li>
-          <a
-            href="#projects"
-            class="btn block py-2 px-3 text-black rounded md:bg-transparent md:p-0 hover:text-blue-300"
-          >
-            Proyectos
-          </a>
-        </li>
-        <li>
-          <a
-            href="#skills"
-            class="btn block py-2 px-3 text-black rounded md:bg-transparent md:p-0 hover:text-blue-300"
-          >
-            Habilidades
-          </a>
-        </li>
-      </ul>
-    </div>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+          Descargar CV
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
 
 <script>
   const button = document.querySelector("#menu-button") as Element;
   const menuOpen = document.querySelector("#menu-open") as Element;
-
   button?.addEventListener("click", () => {
     menuOpen.classList.toggle("hidden");
   });
